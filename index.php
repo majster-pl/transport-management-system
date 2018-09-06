@@ -372,13 +372,13 @@ session_start();
 		<!-- SHADOW FOR SIDE MENU ON MIBILE VERSION -->
 		<div id="main_div_shader" ><a style="outline: 0;" href="javascript:hideNavBar()"></a></div>
 
+		<div class="footer_div">
+			<p>Copyright © 2018 Szymon Waliczek</p>
+		</div>
 	</div>
-
 
 	<div class="orientation_msg"></div>
 </body>
-
-
 
 
 </html>

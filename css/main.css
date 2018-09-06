@@ -81,7 +81,7 @@ body {
 /*BOTTOM CONTAINER*/
 .bottom_content_div {
 	width: 100%;
-	height: calc(100% - 50px);
+	height: calc(100% - 70px);
 }
 /*MAIN IFRAME ON INDEX*/
 .iframe_main_page {
@@ -101,8 +101,17 @@ body {
 
 
 
-
-
+/*FOOTER*/
+.footer_div {
+	height: 20px;
+	background-color: orange;
+}
+.footer_div p {
+	padding: 2px 0;
+	margin: 0 0;
+	font-size: 12px;
+	text-align: center;
+}
 
 
 /*DESKTOP MODE*/
@@ -136,6 +145,6 @@ body {
 	/*BOTTOM CONTAINER*/
 	.bottom_content_div {
 		width: 100%;
-		height: calc(100% - 90px);
+		height: calc(100% - 110px);
 	}
 }
