@@ -1,19 +1,24 @@
 /*CSS FOR STYLING LOGIN PAGE*/
 
+html {
+	background-color: #eceeef;
+	font-family: arial;
+}
 
 .selectDisable {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 
 
 /*MAIN LOGIN COINTAINER*/
 .login_container {
-	width: 80%;
-	max-width: 400px;
+	width: 90%;
+	min-width: 200px;
+	/*max-width: 400px;*/
 	/*height: 320px;*/
 	/*padding: 40px 0;*/
 	margin: auto;
@@ -39,8 +44,8 @@
 }
 #welcome_msg p {
 	text-align: center;
-	font-size: 25px;
-	color: white;
+	font-size: 15px;
+	color: black;
 }
 
 
@@ -52,9 +57,9 @@
 /*LOGIN IMAGE DIV*/
 #login_img {
 	width: 100%;
-	height: 70px;
+	height: 50px;
 	outline: 0;	
-	margin-top: 25px;
+	margin-top: 15px;
 }
 /*LOGIN IMAGE INSIDE DIV*/
 #login_img img {
@@ -66,7 +71,7 @@
 /*FORM INPUT FIELDS*/
 .login_container form input {
 	width: 80%;
-	height: 40px;
+	height: 35px;
 	padding: 0px 10px;
 	margin-top: 15px;
 	border: 1px solid black;
@@ -103,4 +108,26 @@
 	color: white;
 	cursor: pointer;
 	font-size: 18px;
+}
+
+
+
+
+
+/* RESPONSIVE LAYOUT DESKTOP MODE*/
+@media screen and (min-width: 992px) {
+	/*MAIN LOGIN COINTAINER*/
+	.login_container {
+		width: 70%;
+		max-width: 400px;
+	}
+
+	/*WELCOME TEXT MESSAGE*/
+	#welcome_msg p {
+		font-size: 25px;
+	}
+
+
+
+
 }
