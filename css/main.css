@@ -1,1 +1,142 @@
 /*THIS IS MAIN CSS FILE*/
+html {
+	background-color: #eceeef;
+	font-family: arial;
+}
+a {
+	outline: 0;	
+}
+
+
+/*DESABLE SELECTING add this class to element*/
+.selectDisable {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+.selectEnable { 
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    user-select: text;
+}
+
+/*0e024e  dark blue*/
+/*01bae9  light blue*/
+/*f39228  orange */
+
+
+.disable-select {
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	transition: width .5s;
+	background-color: lightblue;
+}
+
+.main_div {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+/*HEADR*/
+.top_bar_div {
+	height: 50px;
+	width: 100%;
+	background-color: orange;
+}
+/*LOGO IMAGE*/
+#logo_img_div {
+	display: block;
+	position: absolute;
+	left: 50px;
+	text-align: center;
+	height: 50px;
+	width: calc(100% - 100px);
+}
+#logo_img_div a {
+	display: inline-block;
+	padding: 5px;
+}
+#logo_img_div a img {
+	object-fit: contain;
+	height: 40px;
+}
+
+
+
+
+/*BOTTOM CONTAINER*/
+.bottom_content_div {
+	width: 100%;
+	height: calc(100% - 50px);
+}
+/*MAIN IFRAME ON INDEX*/
+.iframe_main_page {
+	width: 100%;
+	height: 100%;
+}
+
+
+/*MAIN VIEW CONTENT*/
+#main_content_div {
+	background-color: gray;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+/*DESKTOP MODE*/
+@media screen and (min-width: 992px) {
+
+	/*HEADR*/
+	.top_bar_div {
+		height: 90px;
+		width: 100%;
+		/*background-color: #0e024e;*/
+	}
+	/*LOGO IMAGE*/
+	#logo_img_div {
+		left: 0px;
+		height: 90px;
+	}
+
+	#logo_img_div a {
+		float: left;
+		height: 70px;
+		padding: 10px;
+	}
+	#logo_img_div a img {
+		object-fit: contain;
+		height: 70px;
+	}
+
+
+
+
+	/*BOTTOM CONTAINER*/
+	.bottom_content_div {
+		width: 100%;
+		height: calc(100% - 90px);
+	}
+}
