@@ -373,7 +373,7 @@ session_start();
 		<div id="main_div_shader" ><a style="outline: 0;" href="javascript:hideNavBar()"></a></div>
 
 		<div class="footer_div">
-			<p>Copyright © 2018 Szymon Waliczek</p>
+			<p>Copyright &copy 2018 Szymon Waliczek</p>
 		</div>
 	</div>
 
