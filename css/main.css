@@ -10,18 +10,18 @@ a {
 
 /*DESABLE SELECTING add this class to element*/
 .selectDisable {
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
 }
 .selectEnable { 
-    -webkit-user-select: text;
-    -khtml-user-select: text;
-    -moz-user-select: text;
-    -o-user-select: text;
-    user-select: text;
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-o-user-select: text;
+	user-select: text;
 }
 
 /*0e024e  dark blue*/
@@ -78,23 +78,60 @@ body {
 
 
 
-/*BOTTOM CONTAINER*/
+/*BOTTOM CONTAINER - anything between header and footer*/
 .bottom_content_div {
 	width: 100%;
 	height: calc(100% - 70px);
 }
-/*MAIN IFRAME ON INDEX*/
+/*MAIN IFRAME ON INDEX - iframe for content page (on the right of menu) */
 .iframe_main_page {
 	width: 100%;
 	height: 100%;
 }
 
 
-/*MAIN VIEW CONTENT*/
-#main_content_div {
+/*MAIN VIEW CONTENT - div to hold iframe for main iframe page*/
+#content_iframe_div {
 	background-color: gray;
 	height: 100%;
 	overflow: hidden;
+}
+
+
+/*MAIN  MENU NAVIGATION - navigation menu on the left*/
+#navigation_menu {
+	background-color: #01bae9;
+	position: absolute;
+	width: 200px;
+	height: calc(100% - 50px);
+	float: left;
+	margin-left: -300px;
+	transition: margin-left .5s;
+	z-index: 6;
+	overflow: auto;
+}
+.mainmenu_ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/*styling for menu item*/
+.mainmenu_ul a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: large;
+	padding: 10px;
+	transition: background-color 0.2s;
+}
+/*menu item on hover over*/
+.mainmenu_ul a:hover {
+	background-color: #0e024e;
+}
+/*menu item on clicked*/
+.mainmenu_ul a:active { 
+	background-color: gray;
 }
 
 
@@ -112,6 +149,26 @@ body {
 	font-size: 12px;
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*DESKTOP MODE*/
@@ -147,4 +204,16 @@ body {
 		width: 100%;
 		height: calc(100% - 110px);
 	}
+
+
+	/*SIDE MENU*/
+	#navigation_menu {
+		position: static;
+		top: auto;
+		left: auto;
+		height: 100%;
+		margin-left: 0px;
+		transition: margin-left 0s;
+	}
+
 }
