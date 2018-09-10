@@ -23,7 +23,7 @@ session_start();
 				if(isset($_SESSION['u_id'])) {
 					echo '
 					<a href="javascript:showNavBar()">
-					<img id="menu_icon" src="images/icons/menu.png" alt="Menu" title="Menu" />
+					<img id="menu_icon" src="images/icons/menu-white.png" alt="Menu" title="Menu" />
 					</a>
 					';
 				}
@@ -37,7 +37,7 @@ session_start();
 			</div>
 			<!-- USER ACCOUNT MENU -->
 			<?php 
-			if(isset($_SESSION['u_id'])) {
+			if(isset($_SESSION['u_id_disable'])) {
 				echo '
 				<label id="user_name_label">Hi, ', $_SESSION['u_firstname'] ,' ', $_SESSION['u_lastname'] ,'</label>
 				<div class="user_btn_div">
@@ -81,7 +81,7 @@ session_start();
 			<!-- SIDE MENU -->
 			<?php 
 			// only show menu when user logged in
-			if (!isset($_SESSION['u_id'])) {
+			if (isset($_SESSION['u_id'])) {
 				echo '
 				<nav id="navigation_menu">
 				<ul class="mainmenu_ul">
